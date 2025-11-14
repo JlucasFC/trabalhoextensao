@@ -1,20 +1,19 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 const members = [
   {
     name: "José Lucas",
-    role: "Desenvolvedor Full Stack",
-    img: "/team/lucas.jpg", 
+    role: "Estudante Analise e desenvolvimento",
+    img: "/jlucas.jpeg", 
   },
   {
-    name: "Maria Souza",
-    role: "Analista de Segurança",
-    img: "/team/maria.jpg",
+    name: "Nanda Lais",
+    role: "Estudante Analise e desenvolvimento",
+    img: "/nanda.jpeg",
   },
   {
-    name: "Pedro Almeida",
-    role: "Especialista em Redes",
-    img: "/team/pedro.jpg",
+    name: "Suelen Marques",
+    role: "Estudante Analise e desenvolvimento",
+    img: "/suellen.jpeg",
   },
 ];
 
@@ -41,12 +40,10 @@ export default function TeamSection() {
               className="flex flex-col items-center bg-card border border-border p-6 rounded-xl shadow-sm"
             >
               <div className="w-28 h-28 rounded-full overflow-hidden border border-border mb-4">
-                <Image 
+                <img 
                   src={member.img} 
                   alt={member.name} 
-                  width={200} 
-                  height={200} 
-                  className="object-cover"
+                  className="object-cover h-full w-full"
                 />
               </div>
 
