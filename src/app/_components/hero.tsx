@@ -3,7 +3,7 @@ import { ShieldCheck } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[100dvh] flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative w-full min-h-dvh flex items-center justify-center overflow-hidden bg-background">
 
       {/* GRID DIGITAL (FUNDO) */}
       <div className="absolute inset-0 bg-grid-pattern pointer-events-none"></div>
@@ -39,7 +39,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="/ataques-famosos"
+            href="/famosos"
             className="px-8 py-3 border border-border text-foreground rounded-lg hover:border-accent hover:text-accent transition"
           >
             Ver Riscos
